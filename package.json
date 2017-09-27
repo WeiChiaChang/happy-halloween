@@ -1,0 +1,28 @@
+{
+  "name": "happy-halloween",
+  "version": "1.0.0",
+  "description": "Easter egg for special halloween with voice control",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pingy dev",
+    "export": "pingy export"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WeiChiaChang/happy-halloween.git"
+  },
+  "keywords": [
+    "halloween"
+  ],
+  "author": "weichiachang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WeiChiaChang/happy-halloween/issues"
+  },
+  "homepage": "https://github.com/WeiChiaChang/happy-halloween#readme",
+  "devDependencies": {
+    "@pingy/cli": "^0.8.0",
+    "node-sass": "^4.5.3"
+  }
+}
