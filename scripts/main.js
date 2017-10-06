@@ -2,7 +2,6 @@ try {
   // 先去偵測瀏覽器支援與否，有支援就 new 
   var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
   var recognition = new SpeechRecognition();
-  console.log("hello world: ");
   console.log(recognition);
 } catch (e) {
   // 不支援就秀出 GG 畫面
@@ -39,7 +38,13 @@ recognition.onresult = function (event) {
     // 在這觸發
     console.log(transcript)
     if (transcript.toLowerCase().includes('halloween')) {
-      trigger(data)
+      // 聽到關鍵字立即觸發彩蛋～～
+      dog_trigger(dog_data)
+      hatghost_trigger(hatghost_data)
+      pumpkin_trigger(pumpkin_data)
+      trickortreat_trigger(trickortreat_data)
+      littleboy_trigger(littleboy_data)
+      zombie_trigger(zombie_data)
     }
   }
 };
@@ -65,7 +70,7 @@ recognition.start();
 var dog = function () {
   var shock = document.createElement('div')
   var img = new Image()
-  img.src = data
+  img.src = dog_data
   img.style.width = '1050px'
   img.style.height = '300px'
   img.style.transition = '7s all'
@@ -85,8 +90,150 @@ var dog = function () {
   }, 7300)
 }
 
-var trigger = function (data) {
+var dog_trigger = function (data) {
   dog()
 };
 
-var data = 'https://i.imgur.com/rJRRZw7.gif'
+var pumpkin = function () {
+  var shock = document.createElement('div')
+  var img = new Image()
+  img.src = pumpkin_data
+  img.style.width = '500px'
+  img.style.height = '500px'
+  img.style.transition = '20s all'
+  img.style.position = 'fixed'
+  img.style.left = '-600px'
+  img.style.bottom = '-60px'
+  img.style.zIndex = 99999
+
+  document.body.appendChild(img)
+
+  window.setTimeout(function () {
+    img.style.left = 'calc(100% + 500px)'
+  }, 50)
+
+  window.setTimeout(function () {
+    img.parentNode.removeChild(img)
+  }, 21300)
+}
+
+var pumpkin_trigger = function (data) {
+  pumpkin()
+};
+
+var hatghost = function () {
+  var shock = document.createElement('div')
+  var img = new Image()
+  img.src = hatghost_data
+  img.style.width = '300px'
+  img.style.height = '340px'
+  img.style.transition = '13s all'
+  img.style.position = 'fixed'
+  img.style.left = '-300px'
+  img.style.top = '100px'
+  img.style.zIndex = 99999
+
+  document.body.appendChild(img)
+
+  window.setTimeout(function () {
+    img.style.left = 'calc(100% + 300px)'
+  }, 50)
+
+  window.setTimeout(function () {
+    img.parentNode.removeChild(img)
+  }, 21300)
+}
+
+var hatghost_trigger = function (data) {
+  hatghost()
+};
+
+var trickortreat = function () {
+  var shock = document.createElement('div')
+  var img = new Image()
+  img.src = trickortreat_data
+  img.style.width = '440px'
+  img.style.height = '400px'
+  img.style.transition = '13s all'
+  img.style.position = 'fixed'
+  img.style.left = '-400px'
+  img.style.top = '200px'
+  img.style.zIndex = 99999
+
+  document.body.appendChild(img)
+
+  window.setTimeout(function () {
+    img.style.left = 'calc(100% + 400px)'
+  }, 50)
+
+  window.setTimeout(function () {
+    img.parentNode.removeChild(img)
+  }, 21300)
+}
+
+var trickortreat_trigger = function (data) {
+  trickortreat()
+};
+
+var littleboy = function () {
+  var shock = document.createElement('div')
+  var img = new Image()
+  img.src = littleboy_data
+  img.style.width = '420px'
+  img.style.height = '400px'
+  img.style.transition = '10s all'
+  img.style.position = 'fixed'
+  img.style.right = '-400px'
+  img.style.bottom = '-40px'
+  img.style.zIndex = 99999
+
+  document.body.appendChild(img)
+
+  window.setTimeout(function () {
+    img.style.right = 'calc(100% + 400px)'
+  }, 50)
+
+  window.setTimeout(function () {
+    img.parentNode.removeChild(img)
+  }, 10300)
+}
+
+var littleboy_trigger = function (data) {
+  littleboy()
+};
+
+var zombie = function () {
+  var shock = document.createElement('div')
+  var img = new Image()
+  img.src = zombie_data
+  img.style.width = '420px'
+  img.style.height = '400px'
+  img.style.transition = '25s all'
+  img.style.position = 'fixed'
+  img.style.right = '-400px'
+  img.style.bottom = '-120px'
+  img.style.zIndex = 99999
+
+  document.body.appendChild(img)
+
+  window.setTimeout(function () {
+    img.style.right = 'calc(100% + 400px)'
+  }, 50)
+
+  window.setTimeout(function () {
+    img.parentNode.removeChild(img)
+  }, 25300)
+}
+
+var zombie_trigger = function (data) {
+  zombie()
+};
+
+var dog_data = 'https://i.imgur.com/rJRRZw7.gif'
+var pumpkin_data = '../images/pumpkin.gif'
+var hatghost_data = '../images/hatghost.gif'
+var trickortreat_data = '../images/trickortreat.gif'
+var littleboy_data = '../images/littleboy.gif'
+var zombie_data = '../images/zombie.gif'
+
+
