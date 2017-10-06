@@ -39,7 +39,6 @@ recognition.onresult = function (event) {
     console.log(transcript)
     if (transcript.toLowerCase().includes('halloween')) {
       // 聽到關鍵字立即觸發彩蛋～～
-      dog_trigger(dog_data)
       hatghost_trigger(hatghost_data)
       pumpkin_trigger(pumpkin_data)
       trickortreat_trigger(trickortreat_data)
@@ -65,34 +64,6 @@ recognition.onerror = function (event) {
 
 // start() when loading already～
 recognition.start();
-
-// That's where easter egg be triggered
-var dog = function () {
-  var shock = document.createElement('div')
-  var img = new Image()
-  img.src = dog_data
-  img.style.width = '1050px'
-  img.style.height = '300px'
-  img.style.transition = '7s all'
-  img.style.position = 'fixed'
-  img.style.left = '-1100px'
-  img.style.bottom = '0px'
-  img.style.zIndex = 99999
-
-  document.body.appendChild(img)
-
-  window.setTimeout(function () {
-    img.style.left = 'calc(100% + 500px)'
-  }, 50)
-
-  window.setTimeout(function () {
-    img.parentNode.removeChild(img)
-  }, 7300)
-}
-
-var dog_trigger = function (data) {
-  dog()
-};
 
 var pumpkin = function () {
   var shock = document.createElement('div')
@@ -127,7 +98,7 @@ var hatghost = function () {
   img.src = hatghost_data
   img.style.width = '300px'
   img.style.height = '340px'
-  img.style.transition = '13s all'
+  img.style.transition = '24s all'
   img.style.position = 'fixed'
   img.style.left = '-300px'
   img.style.top = '100px'
@@ -141,7 +112,7 @@ var hatghost = function () {
 
   window.setTimeout(function () {
     img.parentNode.removeChild(img)
-  }, 21300)
+  }, 24300)
 }
 
 var hatghost_trigger = function (data) {
@@ -179,18 +150,18 @@ var littleboy = function () {
   var shock = document.createElement('div')
   var img = new Image()
   img.src = littleboy_data
-  img.style.width = '420px'
+  img.style.width = '300px'
   img.style.height = '400px'
   img.style.transition = '10s all'
   img.style.position = 'fixed'
-  img.style.right = '-400px'
-  img.style.bottom = '-40px'
+  img.style.right = '-300px'
+  img.style.bottom = '-60px'
   img.style.zIndex = 99999
 
   document.body.appendChild(img)
 
   window.setTimeout(function () {
-    img.style.right = 'calc(100% + 400px)'
+    img.style.right = 'calc(100% + 300px)'
   }, 50)
 
   window.setTimeout(function () {
@@ -211,7 +182,7 @@ var zombie = function () {
   img.style.transition = '25s all'
   img.style.position = 'fixed'
   img.style.right = '-400px'
-  img.style.bottom = '-120px'
+  img.style.bottom = '-130px'
   img.style.zIndex = 99999
 
   document.body.appendChild(img)
