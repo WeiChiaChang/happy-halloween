@@ -8,18 +8,18 @@ var pumpkin = function () {
   var shock = document.createElement('div')
   var img = new Image()
   img.src = pumpkin_data
-  img.style.width = '500px'
-  img.style.height = '500px'
+  img.style.width = '400px'
+  img.style.height = '400px'
   img.style.transition = '20s all'
   img.style.position = 'fixed'
-  img.style.left = '-600px'
-  img.style.bottom = '-60px'
+  img.style.left = '-400px'
+  img.style.bottom = '-65px'
   img.style.zIndex = 99999
 
   document.body.appendChild(img)
 
   window.setTimeout(function () {
-    img.style.left = 'calc(100% + 500px)'
+    img.style.left = 'calc(100% + 400px)'
   }, 50)
 
   window.setTimeout(function () {
@@ -35,23 +35,23 @@ var hatghost = function () {
   var shock = document.createElement('div')
   var img = new Image()
   img.src = hatghost_data
-  img.style.width = '300px'
-  img.style.height = '340px'
-  img.style.transition = '24s all'
+  img.style.width = '200px'
+  img.style.height = '240px'
+  img.style.transition = '20s all'
   img.style.position = 'fixed'
-  img.style.left = '-300px'
-  img.style.top = '100px'
+  img.style.left = '-200px'
+  img.style.top = '60px'
   img.style.zIndex = 99999
 
   document.body.appendChild(img)
 
   window.setTimeout(function () {
-    img.style.left = 'calc(100% + 300px)'
+    img.style.left = 'calc(100% + 200px)'
   }, 50)
 
   window.setTimeout(function () {
     img.parentNode.removeChild(img)
-  }, 24300)
+  }, 20300)
 }
 
 var hatghost_trigger = function (data) {
@@ -62,23 +62,23 @@ var trickortreat = function () {
   var shock = document.createElement('div')
   var img = new Image()
   img.src = trickortreat_data
-  img.style.width = '440px'
-  img.style.height = '400px'
-  img.style.transition = '13s all'
+  img.style.width = '340px'
+  img.style.height = '300px'
+  img.style.transition = '15s all'
   img.style.position = 'fixed'
-  img.style.left = '-400px'
-  img.style.top = '200px'
+  img.style.left = '-350px'
+  img.style.top = '160px'
   img.style.zIndex = 99999
 
   document.body.appendChild(img)
 
   window.setTimeout(function () {
-    img.style.left = 'calc(100% + 400px)'
+    img.style.left = 'calc(100% + 350px)'
   }, 50)
 
   window.setTimeout(function () {
     img.parentNode.removeChild(img)
-  }, 21300)
+  }, 15300)
 }
 
 var trickortreat_trigger = function (data) {
@@ -90,7 +90,7 @@ var littleboy = function () {
   var img = new Image()
   img.src = littleboy_data
   img.style.width = '300px'
-  img.style.height = '400px'
+  img.style.height = '480px'
   img.style.transition = '10s all'
   img.style.position = 'fixed'
   img.style.right = '-300px'
