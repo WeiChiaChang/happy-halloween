@@ -59,6 +59,18 @@ $ pingy dev
 $ pingy export
 ```
 
+## CDN & NPM
+You can use CDN directly
+```javascript
+https://rawgit.com/WeiChiaChang/Easter-egg/master/happy-halloween.js
+```
+
+The package is also available via [NPM](https://www.npmjs.com/package/happy-halloween).
+
+```shell
+$ npm install happy-halloween
+```
+
 ## Source
 All of the Gifs were derived from [GIPHY](https://giphy.com/).
 
