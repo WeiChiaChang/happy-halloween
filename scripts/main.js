@@ -1,8 +1,8 @@
-var pumpkin_data = 'https://weichiachang.github.io/happy-halloween/images/pumpkin.gif'
-var hatghost_data = 'https://weichiachang.github.io/happy-halloween/images/hatghost.gif'
-var trickortreat_data = 'https://weichiachang.github.io/happy-halloween/images/trickortreat.gif'
-var littleboy_data = 'https://weichiachang.github.io/happy-halloween/images/littleboy.gif'
-var zombie_data = 'https://weichiachang.github.io/happy-halloween/images/zombie.gif'
+var pumpkin_data = './images/pumpkin.gif'
+var hatghost_data = './images/hatghost.gif'
+var trickortreat_data = './images/trickortreat.gif'
+var littleboy_data = './images/littleboy.gif'
+var zombie_data = './images/zombie.gif'
 
 var halloween_background = document.createElement('div');
 
