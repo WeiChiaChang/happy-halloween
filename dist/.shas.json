@@ -29,15 +29,15 @@
     ]
   },
   {
-    "type": "node-sass@4.5.3::map::minify",
+    "type": "::map::minify",
     "inputSha": [
       {
-        "file": "styles/main.sass",
-        "sha": "b6870aa4e3dff04a31c591e7b448f12bc3d004d4"
+        "file": "styles/main.css",
+        "sha": "7391a38098447ccac77d8dbd3f0ee84d1be98b71"
       }
     ],
-    "outputSha": "701f298323b9a78f08e93e4ed5c5449fb5a3025a",
-    "input": "styles/main.sass",
+    "outputSha": "115a1425882ebd0b854b9dce698727c0d9aa7709",
+    "input": "styles/main.css",
     "output": [
       "styles/main.css.map",
       "styles/main.css"
