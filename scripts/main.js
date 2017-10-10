@@ -163,20 +163,23 @@ recognition.onresult = function (event) {
     if (transcript.toLowerCase().includes('halloween')) {
       var sound = new Audio("https://weichiachang.github.io/happy-halloween/images/halloween.mp3");
       sound.addEventListener("canplaythrough", function () {
+        halloween_background.style.width = "100%";
+        halloween_background.style.height = "100%";
+        halloween_background.style.left = 0;
+        halloween_background.style.top = 0;
+        halloween_background.style.position = "fixed";
+        halloween_background.style.zIndex = 999999999;
+        // halloween_background.style.background = '#FF7619';
+        halloween_background.style.backgroundImage = "url('https://weichiachang.github.io/happy-halloween/images/background.png')";
+        halloween_background.style.opacity = .4;
+        document.body.appendChild(halloween_background);
+        // play halloween music ~
         sound.play();
         setTimeout(function (){
-          halloween_background.style.width = "100%";
-          halloween_background.style.height = "100%";
-          halloween_background.style.left = 0;
-          halloween_background.style.top = 0;
-          halloween_background.style.position = "fixed";
-          halloween_background.style.zIndex = 999999999;
-          // halloween_background.style.background = '#FF7619';
-          halloween_background.style.backgroundImage = "url('https://weichiachang.github.io/happy-halloween/images/background.png')";
-          halloween_background.style.opacity = .4;
-          document.body.appendChild(halloween_background);  
           // stop the music after 12 secs
           sound.pause();
+          // remove halloween_background image after 12 secs
+          halloween_background.parentNode.removeChild(halloween_background);
         }, 12000); 
       }, false);
 
