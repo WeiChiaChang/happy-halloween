@@ -27,5 +27,20 @@
       "scripts/main.js.map",
       "scripts/main.js"
     ]
+  },
+  {
+    "type": "node-sass@4.5.3::map::minify",
+    "inputSha": [
+      {
+        "file": "styles/main.sass",
+        "sha": "b6870aa4e3dff04a31c591e7b448f12bc3d004d4"
+      }
+    ],
+    "outputSha": "701f298323b9a78f08e93e4ed5c5449fb5a3025a",
+    "input": "styles/main.sass",
+    "output": [
+      "styles/main.css.map",
+      "styles/main.css"
+    ]
   }
 ]
