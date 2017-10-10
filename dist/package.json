@@ -2,7 +2,6 @@
   "name": "happy-halloween",
   "version": "1.0.0",
   "description": "Easter egg for special halloween with voice control",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "pingy dev",
@@ -13,7 +12,8 @@
     "url": "git+https://github.com/WeiChiaChang/happy-halloween.git"
   },
   "keywords": [
-    "halloween"
+    "halloween",
+    "easter-eggs"
   ],
   "author": "weichiachang",
   "license": "MIT",
