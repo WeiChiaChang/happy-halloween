@@ -4,10 +4,10 @@
     "inputSha": [
       {
         "file": "index.html",
-        "sha": "531cc2e608ff706b721f64508081cea633172ab5"
+        "sha": "eb9effdc37d0b1f6e5e254f3256aa7426d5ddbee"
       }
     ],
-    "outputSha": "9e69ca4d8dcab2c1a347dc47eb3c587c695c3277",
+    "outputSha": "027f15d42e286ca38608cd5fc8de41ddd30baae4",
     "input": "index.html",
     "output": [
       "index.html"
@@ -33,7 +33,7 @@
     "inputSha": [
       {
         "file": "styles/main.css",
-        "sha": "40125877972ce9e3bd8b9092eb0ab5624218f9cd"
+        "sha": "6b11157330de2d623675c6e6f6c7dfb501811444"
       }
     ],
     "outputSha": "89e77e25a0a92918b5e1ffa14a46a999cced6b5b",
