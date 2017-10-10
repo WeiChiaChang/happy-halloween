@@ -4,6 +4,8 @@ var trickortreat_data = 'https://weichiachang.github.io/happy-halloween/images/t
 var littleboy_data = 'https://weichiachang.github.io/happy-halloween/images/littleboy.gif'
 var zombie_data = 'https://weichiachang.github.io/happy-halloween/images/zombie.gif'
 
+var background = document.createElement('div');
+
 var pumpkin = function () {
   var shock = document.createElement('div')
   var img = new Image()
@@ -139,8 +141,6 @@ var zombie_trigger = function (data) {
   zombie()
 };
 
-var background = document.createElement('div');
-
 try {
   // 先去偵測瀏覽器支援與否，有支援就 new
   var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -163,16 +163,16 @@ recognition.onresult = function (event) {
     if (transcript.toLowerCase().includes('halloween')) {
 
       window.setTimeout(function () {
-        shock.style.width = "100%";
-        shock.style.height = "100%";
-        shock.style.left = 0;
-        shock.style.top = 0;
-        shock.style.position = "fixed";
-        shock.style.zIndex = 999999999;
-        shock.style.background = '#FF7619';
-        shock.style.opacity = .4;
+        background.style.width = "100%";
+        background.style.height = "100%";
+        background.style.left = 0;
+        background.style.top = 0;
+        background.style.position = "fixed";
+        background.style.zIndex = 999999999;
+        background.style.background = '#FF7619';
+        background.style.opacity = .4;
         document.body.appendChild(background);  
-      }, 120000);
+      }, 12000);
 
       var sound = new Audio("https://weichiachang.github.io/happy-halloween/images/halloween.mp3");
       // sound.play();
