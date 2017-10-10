@@ -1,48 +1,8 @@
-try {
-  // 先去偵測瀏覽器支援與否，有支援就 new 出來
-  var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-  var recognition = new SpeechRecognition();
-  console.log(recognition);
-} catch (e) {
-  console.error(e);
-  $('.no-browser-support').show();
-}
-
-recognition.continuous = true;
-
-recognition.onresult = function (event) {
-  var current = event.resultIndex;
-  var transcript = event.results[current][0].transcript;
-  // 似乎是 mobile 的 bug，所有內容都會被重複印出兩次
-  var mobileRepeatBug = (current == 1 && transcript == event.results[0][0].transcript);
-  if (!mobileRepeatBug) {
-    console.log(transcript)
-    if (transcript.toLowerCase().includes('halloween')) {
-      hatghost_trigger(hatghost_data)
-      pumpkin_trigger(pumpkin_data)
-      trickortreat_trigger(trickortreat_data)
-      littleboy_trigger(littleboy_data)
-      zombie_trigger(zombie_data)
-    }
-  }
-};
-
-recognition.onstart = function () {
-  console.log('#1 Voice recognition activated. Try speaking into the microphone please.');
-}
-
-recognition.onspeechend = function () {
-  console.log('#2 You were quiet for a while so voice recognition turned itself off.');
-}
-
-recognition.onerror = function (event) {
-  if (event.error == 'no-speech') {
-    console.log('#3 No speech was detected. Try again.');
-  };
-}
-
-// start() when loading already～
-recognition.start();
+var pumpkin_data = 'https://weichiachang.github.io/happy-halloween/images/pumpkin.gif'
+var hatghost_data = 'https://weichiachang.github.io/happy-halloween/images/hatghost.gif'
+var trickortreat_data = 'https://weichiachang.github.io/happy-halloween/images/trickortreat.gif'
+var littleboy_data = 'https://weichiachang.github.io/happy-halloween/images/littleboy.gif'
+var zombie_data = 'https://weichiachang.github.io/happy-halloween/images/zombie.gif'
 
 var pumpkin = function () {
   var shock = document.createElement('div')
@@ -179,10 +139,47 @@ var zombie_trigger = function (data) {
   zombie()
 };
 
-var pumpkin_data = 'https://weichiachang.github.io/happy-halloween/images/pumpkin.gif'
-var hatghost_data = 'https://weichiachang.github.io/happy-halloween/images/hatghost.gif'
-var trickortreat_data = 'https://weichiachang.github.io/happy-halloween/images/trickortreat.gif'
-var littleboy_data = 'https://weichiachang.github.io/happy-halloween/images/littleboy.gif'
-var zombie_data = 'https://weichiachang.github.io/happy-halloween/images/zombie.gif'
+try {
+  // 先去偵測瀏覽器支援與否，有支援就 new
+  var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  var recognition = new SpeechRecognition();
+  console.log(recognition);
+} catch (e) {
+  console.error(e);
+  $('.no-browser-support').show();
+}
 
+recognition.continuous = true;
 
+recognition.onresult = function (event) {
+  var current = event.resultIndex;
+  var transcript = event.results[current][0].transcript;
+  // 似乎是 mobile 的 bug，所有內容都會被重複印出兩次
+  var mobileRepeatBug = (current == 1 && transcript == event.results[0][0].transcript);
+  if (!mobileRepeatBug) {
+    console.log(transcript)
+    if (transcript.toLowerCase().includes('halloween')) {
+      hatghost_trigger(hatghost_data)
+      pumpkin_trigger(pumpkin_data)
+      trickortreat_trigger(trickortreat_data)
+      littleboy_trigger(littleboy_data)
+      zombie_trigger(zombie_data)
+    }
+  }
+};
+
+recognition.onstart = function () {
+  console.log('#1 Voice recognition activated. Try speaking into the microphone please.');
+}
+
+recognition.onspeechend = function () {
+  console.log('#2 You were quiet for a while so voice recognition turned itself off.');
+}
+
+recognition.onerror = function (event) {
+  if (event.error == 'no-speech') {
+    console.log('#3 No speech was detected. Try again please.');
+  };
+}
+
+recognition.start();
