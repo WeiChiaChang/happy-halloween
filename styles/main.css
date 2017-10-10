@@ -1,3 +1,12 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+}
+
 p {
   color: #444;
 }
@@ -7,6 +16,9 @@ p {
   margin: 0 auto;
   padding: 100px 50px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .no-browser-support {

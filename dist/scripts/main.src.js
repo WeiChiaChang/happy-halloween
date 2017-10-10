@@ -166,7 +166,7 @@ recognition.onresult = function (event) {
         sound.play();
         setTimeout(function (){
           sound.pause();
-        }, 10000); 
+        }, 12000); 
       }, false);
 
       hatghost_trigger(hatghost_data)
