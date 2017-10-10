@@ -168,7 +168,7 @@ recognition.onresult = function (event) {
         shock.style.left = 0;
         shock.style.top = 0;
         shock.style.position = "fixed";
-        shock.style.zIndex = 99999;
+        shock.style.zIndex = 999999999;
         shock.style.background = '#FF7619';
         shock.style.opacity = .4;
         document.body.appendChild(background);  
