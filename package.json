@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/WeiChiaChang/happy-halloween#readme",
   "devDependencies": {
-    "@pingy/cli": "^0.8.0",
-    "node-sass": "^4.5.3"
+    "@pingy/cli": "^0.8.0"
   }
 }
