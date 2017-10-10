@@ -1,6 +1,14 @@
 ## happy-halloween
 🗣 Say "happy halloween" to your browser 🎃 !
 
+> Still trying to figure out about how to solve long first loading time, any advice, pull request or issues will be welcome, thanks !
+
+<p align="center">
+  <a target="_blank" href="https://github.com/WeiChiaChang/happy-halloween">
+    <img alt="halloween-demo" src="https://i.imgur.com/HID7mRV.gif">
+  </a>
+</p>
+
 ## Caveat 
 At this stage, you have to use Google Chrome (version >  60 at least) for browsing happy-halloween since Web Speech API still an [experimental technology](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) and other browsers still under implementation so far. You can check [caniuse](https://caniuse.com/#feat=speech-recognition) for more details.
 
@@ -21,7 +29,7 @@ You will see the red light if you allow your microphone :
   </a>
 </p>
 
-That's all, happy halloween ! ![turtle](http://i.imgur.com/879dfXS.gif)
+That's all, just say "happy halloween" to your browser ! ![turtle](http://i.imgur.com/879dfXS.gif)
 
 ## Demo
 [Just have fun !](https://weichiachang.github.io/happy-halloween/dist/)
