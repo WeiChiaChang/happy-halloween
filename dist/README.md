@@ -2,7 +2,9 @@
  🗣 Say "happy halloween" to your browser 🎃 !
 
 ## Source
-All of the gifs were derived from [GIPHY](https://giphy.com/).
+All of the Gifs were derived from [GIPHY](https://giphy.com/).
+
+Audio in the Demo (sourced from [BenSound](https://www.bensound.com/)) is licenced under [Creative Commons](https://www.bensound.com/licensing).
 
 ## Demo
 [Just have fun !](https://weichiachang.github.io/happy-halloween/dist/)

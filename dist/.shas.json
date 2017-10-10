@@ -4,10 +4,10 @@
     "inputSha": [
       {
         "file": "index.html",
-        "sha": "da05717421530cf042bdee25c578506399ad02e2"
+        "sha": "e78a10a058b9ced7711a3a425dbbfa408c1088e9"
       }
     ],
-    "outputSha": "774d282c98bb4f9ed34656bdc8f7ed99b00789ac",
+    "outputSha": "fe43ea65f043ea16256d33168cd23f611123f4d8",
     "input": "index.html",
     "output": [
       "index.html"
@@ -18,10 +18,10 @@
     "inputSha": [
       {
         "file": "scripts/main.js",
-        "sha": "8cd3668583ba8b6e4f5dad9d0d9fd3bfa57d3f30"
+        "sha": "8c09cbadf8e9f1b042846c8eccdd20b66a3cc033"
       }
     ],
-    "outputSha": "212d5b6408638da3b5401edf0f5a9dce5f48b413",
+    "outputSha": "7136800bc0fe869b1d73d6c2fe0c40955e49e38e",
     "input": "scripts/main.js",
     "output": [
       "scripts/main.js.map",

@@ -159,6 +159,10 @@ recognition.onresult = function (event) {
   if (!mobileRepeatBug) {
     console.log(transcript)
     if (transcript.toLowerCase().includes('halloween')) {
+
+      var sound = new Audio("https://weichiachang.github.io/happy-halloween/images/halloween.mp3");
+      sound.play();
+
       hatghost_trigger(hatghost_data)
       pumpkin_trigger(pumpkin_data)
       trickortreat_trigger(trickortreat_data)
