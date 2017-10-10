@@ -4,28 +4,13 @@
     "inputSha": [
       {
         "file": "index.html",
-        "sha": "e565432ca367f1db44e06c9f116ebb73439e4949"
+        "sha": "da05717421530cf042bdee25c578506399ad02e2"
       }
     ],
-    "outputSha": "2d89f88a072819332059f28479d5a68d209822e2",
+    "outputSha": "774d282c98bb4f9ed34656bdc8f7ed99b00789ac",
     "input": "index.html",
     "output": [
       "index.html"
-    ]
-  },
-  {
-    "type": "::map::minify",
-    "inputSha": [
-      {
-        "file": "styles/main.css",
-        "sha": "9a99e0f6213d5bef4db68ecdafc4245ba12b8e13"
-      }
-    ],
-    "outputSha": "45516d68b78b8beb408ac93c46b9f61db9c72267",
-    "input": "styles/main.css",
-    "output": [
-      "styles/main.css.map",
-      "styles/main.css"
     ]
   },
   {
@@ -41,6 +26,21 @@
     "output": [
       "scripts/main.js.map",
       "scripts/main.js"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "styles/main.css",
+        "sha": "9a99e0f6213d5bef4db68ecdafc4245ba12b8e13"
+      }
+    ],
+    "outputSha": "45516d68b78b8beb408ac93c46b9f61db9c72267",
+    "input": "styles/main.css",
+    "output": [
+      "styles/main.css.map",
+      "styles/main.css"
     ]
   }
 ]

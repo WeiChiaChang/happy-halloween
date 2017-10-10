@@ -4,6 +4,9 @@
 ## Source
 All of the gifs were derived from [GIPHY](https://giphy.com/).
 
+## Demo
+[Just have fun !](https://weichiachang.github.io/happy-halloween/dist/)
+
 ## Installation
 First if all, install [pingy](https://pin.gy/cli/) as default front-end build tool.
 
