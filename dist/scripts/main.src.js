@@ -143,7 +143,7 @@ try {
   // 先去偵測瀏覽器支援與否，有支援就 new
   var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
   var recognition = new SpeechRecognition();
-  console.log(recognition);
+  // console.log(recognition);
 } catch (e) {
   console.error(e);
   $('.no-browser-support').show();
