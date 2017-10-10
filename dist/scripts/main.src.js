@@ -4,7 +4,7 @@ var trickortreat_data = 'https://weichiachang.github.io/happy-halloween/images/t
 var littleboy_data = 'https://weichiachang.github.io/happy-halloween/images/littleboy.gif'
 var zombie_data = 'https://weichiachang.github.io/happy-halloween/images/zombie.gif'
 
-var background = document.createElement('div');
+var halloween_background = document.createElement('div');
 
 var pumpkin = function () {
   var shock = document.createElement('div')
@@ -161,24 +161,21 @@ recognition.onresult = function (event) {
   if (!mobileRepeatBug) {
     console.log(transcript)
     if (transcript.toLowerCase().includes('halloween')) {
-
-      window.setTimeout(function () {
-        background.style.width = "100%";
-        background.style.height = "100%";
-        background.style.left = 0;
-        background.style.top = 0;
-        background.style.position = "fixed";
-        background.style.zIndex = 999999999;
-        background.style.background = '#FF7619';
-        background.style.opacity = .4;
-        document.body.appendChild(background);  
-      }, 12000);
-
       var sound = new Audio("https://weichiachang.github.io/happy-halloween/images/halloween.mp3");
-      // sound.play();
       sound.addEventListener("canplaythrough", function () {
         sound.play();
         setTimeout(function (){
+          halloween_background.style.width = "100%";
+          halloween_background.style.height = "100%";
+          halloween_background.style.left = 0;
+          halloween_background.style.top = 0;
+          halloween_background.style.position = "fixed";
+          halloween_background.style.zIndex = 999999999;
+          // halloween_background.style.background = '#FF7619';
+          halloween_background.style.backgroundImage = "url('https://weichiachang.github.io/happy-halloween/images/background.png')";
+          halloween_background.style.opacity = .4;
+          document.body.appendChild(halloween_background);  
+          // stop the music after 12 secs
           sound.pause();
         }, 12000); 
       }, false);
