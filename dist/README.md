@@ -1,10 +1,27 @@
 ## happy-halloween
- 🗣 Say "happy halloween" to your browser 🎃 !
+🗣 Say "happy halloween" to your browser 🎃 !
 
-## Source
-All of the Gifs were derived from [GIPHY](https://giphy.com/).
+## Caveat 
+At this stage, you have to use Google Chrome (version >  60 at least) for browsing happy-halloween since Web Speech API still an [experimental technology](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) and other browsers still under implementation so far. You can check [caniuse](https://caniuse.com/#feat=speech-recognition) for more details.
 
-Audio in the Demo (sourced from [BenSound](https://www.bensound.com/)) is licenced under [Creative Commons](https://www.bensound.com/licensing).
+## Usage
+Choose to <b>Allow</b> the site's use of your microphone :
+
+<p align="center">
+  <a target="_blank" href="https://github.com/WeiChiaChang/happy-halloween">
+    <img alt="open-your-microphone" src="https://i.imgur.com/tfGf5cH.png">
+  </a>
+</p>
+
+You will see the red light if you allow your microphone :
+
+<p align="center">
+  <a target="_blank" href="https://github.com/WeiChiaChang/happy-halloween">
+    <img alt="see-red-light" src="https://i.imgur.com/iE55p9T.png">
+  </a>
+</p>
+
+That's all, happy halloween ! ![turtle](http://i.imgur.com/879dfXS.gif)
 
 ## Demo
 [Just have fun !](https://weichiachang.github.io/happy-halloween/dist/)
@@ -33,6 +50,13 @@ $ pingy dev
 ```shell
 $ pingy export
 ```
+
+## Source
+All of the Gifs were derived from [GIPHY](https://giphy.com/).
+
+Original source of background image comes from [here](http://tianyihengfeng.com/happy-halloween-email/).
+
+Audio in the Demo (sourced from [BenSound](https://www.bensound.com/)) is licenced under [Creative Commons](https://www.bensound.com/licensing).
 
 ## Related
 - [Converting from Speech to Text with JavaScript](https://tutorialzine.com/2017/08/converting-from-speech-to-text-with-javascript)
