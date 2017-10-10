@@ -161,7 +161,13 @@ recognition.onresult = function (event) {
     if (transcript.toLowerCase().includes('halloween')) {
 
       var sound = new Audio("https://weichiachang.github.io/happy-halloween/images/halloween.mp3");
-      sound.play();
+      // sound.play();
+      sound.addEventListener("canplaythrough", function () {
+        sound.play();
+        setTimeout(function (){
+          sound.pause();
+        }, 10000); 
+      }, false);
 
       hatghost_trigger(hatghost_data)
       pumpkin_trigger(pumpkin_data)

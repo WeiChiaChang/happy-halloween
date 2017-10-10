@@ -18,10 +18,10 @@
     "inputSha": [
       {
         "file": "scripts/main.js",
-        "sha": "8c09cbadf8e9f1b042846c8eccdd20b66a3cc033"
+        "sha": "f7654b9741c1ed1e1bd333daec9d4ba6a57d53e9"
       }
     ],
-    "outputSha": "7136800bc0fe869b1d73d6c2fe0c40955e49e38e",
+    "outputSha": "e6471b7f27b61bd8e10f30c73b514c5f025b3d3d",
     "input": "scripts/main.js",
     "output": [
       "scripts/main.js.map",
