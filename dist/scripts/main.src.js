@@ -148,7 +148,7 @@ try {
   // console.log(recognition);
 } catch (e) {
   console.error(e);
-  $('.no-browser-support').show();
+  document.getElementsByClassName('no-browser-support')[0].style.display = 'block';    
 }
 
 recognition.continuous = true;
@@ -196,18 +196,18 @@ recognition.onresult = function (event) {
 };
 
 recognition.onstart = function () {
-  $('.info-tips').text('#1 Voice recognition activated. Try speaking into the microphone please.');
+  document.getElementsByClassName('info-tips')[0].textContent = "#1 Voice recognition activated. Try speaking into the microphone please.";
   console.log('#1 Voice recognition activated. Try speaking into the microphone please.');
 }
 
 recognition.onspeechend = function () {
-  $('.info-tips').text('#2 You were quiet for a while so voice recognition turned itself off.');
+  document.getElementsByClassName('info-tips')[0].textContent = "#2 You were quiet for a while so voice recognition turned itself off.";
   console.log('#2 You were quiet for a while so voice recognition turned itself off.');
 }
 
 recognition.onerror = function (event) {
   if (event.error == 'no-speech') {
-    $('.info-tips').text('#3 No speech was detected. Try again please.');
+    document.getElementsByClassName('info-tips')[0].textContent = "#3 No speech was detected. Try again please.";
     console.log('#3 No speech was detected. Try again please.');
   };
 }
