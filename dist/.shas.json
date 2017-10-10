@@ -4,10 +4,10 @@
     "inputSha": [
       {
         "file": "index.html",
-        "sha": "41b8c2bd6649d2c72a9ce177a55a0b175597a247"
+        "sha": "e5c437dfbd3b5eeebf4f9dc040a1a73832d6324f"
       }
     ],
-    "outputSha": "a38236df4d250bd7e56eb9d5b006099098058107",
+    "outputSha": "c77e8a4dc4792c8195be72dbf7dbcf1c70b841fb",
     "input": "index.html",
     "output": [
       "index.html"
@@ -18,29 +18,14 @@
     "inputSha": [
       {
         "file": "scripts/main.js",
-        "sha": "b37c0e7c4bf36554cf86ff347d9185580c8fcd25"
+        "sha": "c19ed4234dccdaba44feb57485ffed5b47043e86"
       }
     ],
-    "outputSha": "1d4cdd61e235d11600ff9875cdb09d2025d32e2a",
+    "outputSha": "c7c83e97f716aca37fc7cfd92e4fcaaf173d5de4",
     "input": "scripts/main.js",
     "output": [
       "scripts/main.js.map",
       "scripts/main.js"
-    ]
-  },
-  {
-    "type": "node-sass@4.5.3::map::minify",
-    "inputSha": [
-      {
-        "file": "styles/main.sass",
-        "sha": "b6870aa4e3dff04a31c591e7b448f12bc3d004d4"
-      }
-    ],
-    "outputSha": "701f298323b9a78f08e93e4ed5c5449fb5a3025a",
-    "input": "styles/main.sass",
-    "output": [
-      "styles/main.css.map",
-      "styles/main.css"
     ]
   }
 ]

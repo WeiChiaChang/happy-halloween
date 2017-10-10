@@ -1,44 +1,23 @@
 try {
-  // 先去偵測瀏覽器支援與否，有支援就 new 
+  // 先去偵測瀏覽器支援與否，有支援就 new 出來
   var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
   var recognition = new SpeechRecognition();
   console.log(recognition);
 } catch (e) {
-  // 不支援就秀出 GG 畫面
   console.error(e);
   $('.no-browser-support').show();
-  $('.app').hide();
 }
 
-var noteTextarea = $('#note-textarea');
-var noteContent = '';
-// 看起來是關鍵
-// If false, the recording will stop after a few seconds of silence.
-// When true, the silence period is longer (about 15 seconds),
-// true 的話會持續長達 15 秒～
-// allowing us to keep recording even when the user pauses. 
 recognition.continuous = true;
-// This block is called every time the Speech APi captures a line. 
+
 recognition.onresult = function (event) {
-  // event is a SpeechRecognitionEvent object.
-  // It holds all the lines we have captured so far. 
-  // We only need the current one.
-  console.log(event)
   var current = event.resultIndex;
-  // Get a transcript of what was said.
   var transcript = event.results[current][0].transcript;
-  // Add the current transcript to the contents of our Note.
-  // There is a weird bug on mobile, where everything is repeated twice.
-  // 似乎是 mobile 的 bug，所有內容都會被重複印出兩次＠＠
-  // There is no official solution so far so we have to handle an edge case.
+  // 似乎是 mobile 的 bug，所有內容都會被重複印出兩次
   var mobileRepeatBug = (current == 1 && transcript == event.results[0][0].transcript);
   if (!mobileRepeatBug) {
-    noteContent += transcript;
-    noteTextarea.val(noteContent);
-    // 在這觸發
     console.log(transcript)
     if (transcript.toLowerCase().includes('halloween')) {
-      // 聽到關鍵字立即觸發彩蛋～～
       hatghost_trigger(hatghost_data)
       pumpkin_trigger(pumpkin_data)
       trickortreat_trigger(trickortreat_data)
@@ -49,7 +28,7 @@ recognition.onresult = function (event) {
 };
 
 recognition.onstart = function () {
-  console.log('#1 Voice recognition activated. Try speaking into the microphone.');
+  console.log('#1 Voice recognition activated. Try speaking into the microphone please.');
 }
 
 recognition.onspeechend = function () {
@@ -200,11 +179,10 @@ var zombie_trigger = function (data) {
   zombie()
 };
 
-var dog_data = 'https://i.imgur.com/rJRRZw7.gif'
-var pumpkin_data = '../images/pumpkin.gif'
-var hatghost_data = '../images/hatghost.gif'
-var trickortreat_data = '../images/trickortreat.gif'
-var littleboy_data = '../images/littleboy.gif'
-var zombie_data = '../images/zombie.gif'
+var pumpkin_data = 'https://weichiachang.github.io/happy-halloween/images/pumpkin.gif'
+var hatghost_data = 'https://weichiachang.github.io/happy-halloween/images/hatghost.gif'
+var trickortreat_data = 'https://weichiachang.github.io/happy-halloween/images/trickortreat.gif'
+var littleboy_data = 'https://weichiachang.github.io/happy-halloween/images/littleboy.gif'
+var zombie_data = 'https://weichiachang.github.io/happy-halloween/images/zombie.gif'
 
 
