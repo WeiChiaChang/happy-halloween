@@ -168,9 +168,12 @@ recognition.onresult = function (event) {
         halloween_background.style.left = 0;
         halloween_background.style.top = 0;
         halloween_background.style.position = "fixed";
-        halloween_background.style.zIndex = 999999999;
+        halloween_background.style.zIndex = 9999;
         // halloween_background.style.background = '#FF7619';
         halloween_background.style.backgroundImage = "url('https://weichiachang.github.io/happy-halloween/images/background.png')";
+        halloween_background.style.backgroundRepeat = "no-repeat";
+        halloween_background.style.backgroundSize = "cover";
+        halloween_background.style.backgroundPosition = "center";
         halloween_background.style.opacity = .4;
         document.body.appendChild(halloween_background);
         // play halloween music ~
