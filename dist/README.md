@@ -33,6 +33,7 @@ That's all, just say "happy halloween" to your browser ! ![turtle](http://i.imgu
 
 ## Demo
 [Just have fun !](https://weichiachang.github.io/happy-halloween/dist/)
+Or [Codepen](https://codepen.io/WeiChiaChang/full/rGKMya?editors=1010) for another live demo !
 
 ## Installation
 First if all, install [pingy](https://pin.gy/cli/) as default front-end build tool.
