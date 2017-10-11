@@ -6,6 +6,18 @@ var zombie_data = './images/zombie.gif'
 
 var halloween_background = document.createElement('div');
 
+function preloadImg (image) {
+  var img = new Image();
+  img.src = image;
+}
+
+preloadImg('./images/pumpkin.gif');
+preloadImg('./images/hatghost.gif');
+preloadImg('./images/trickortreat.gif');
+preloadImg('./images/littleboy.gif');
+preloadImg('./images/zombie.gif');
+preloadImg('./images/background.png');
+
 var pumpkin = function () {
   var shock = document.createElement('div')
   var img = new Image()
