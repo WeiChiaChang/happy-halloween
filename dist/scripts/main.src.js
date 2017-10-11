@@ -192,7 +192,7 @@ recognition.onresult = function (event) {
         halloween_background.style.backgroundRepeat = "no-repeat";
         halloween_background.style.backgroundSize = "cover";
         halloween_background.style.backgroundPosition = "center";
-        halloween_background.style.opacity = .4;
+        halloween_background.style.opacity = 1;
         document.body.appendChild(halloween_background);
         // play halloween music ~
         sound.play();

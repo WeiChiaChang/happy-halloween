@@ -17,6 +17,21 @@
     "type": "::map::minify",
     "inputSha": [
       {
+        "file": "scripts/main.js",
+        "sha": "3b6b0a8d95799b7c1201db63ac8f3ae40143b493"
+      }
+    ],
+    "outputSha": "053852526e8f8265987f6ac70e308edff7aa1a00",
+    "input": "scripts/main.js",
+    "output": [
+      "scripts/main.js.map",
+      "scripts/main.js"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
         "file": "styles/main.css",
         "sha": "21ab69a4a6d95b47a725d6b0b96076d659671ee1"
       }
@@ -26,21 +41,6 @@
     "output": [
       "styles/main.css.map",
       "styles/main.css"
-    ]
-  },
-  {
-    "type": "::map::minify",
-    "inputSha": [
-      {
-        "file": "scripts/main.js",
-        "sha": "ed51f646583c6af7b1993a58fd07688f5d875356"
-      }
-    ],
-    "outputSha": "892608a934fb0dbe16efef29321903d431dbd8c9",
-    "input": "scripts/main.js",
-    "output": [
-      "scripts/main.js.map",
-      "scripts/main.js"
     ]
   }
 ]
