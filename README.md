@@ -47,6 +47,14 @@ That's all, just say "happy halloween" to your browser ! ![turtle](http://i.imgu
 
 Or [Codepen](https://codepen.io/WeiChiaChang/full/rGKMya?editors=1010) for another live demo !
 
+<p align="center">
+  <a target="_blank" href="https://github.com/WeiChiaChang/happy-halloween">
+    <img alt="easter-egg-collection" src="https://i.imgur.com/AzRZ3rB.png">
+  </a>
+</p>
+
+> Image Original Source From [Awesome Egoist](https://github.com/egoist/evangelion-card)!
+
 ## Installation
 First if all, install [pingy](https://pin.gy/cli/) as default front-end build tool.
 
