@@ -4,7 +4,7 @@
 <a target="_blank" href="https://github.com/WeiChiaChang/happy-halloween" title="npm"><img src="https://img.shields.io/npm/dt/happy-halloween.svg"></a>
 <a target="_blank" href="https://badge.fury.io/js/happy-halloween" title="npm version"><img src="https://badge.fury.io/js/happy-halloween.svg"></a>
 <a target="_blank" href="https://david-dm.org/weichiachang/happy-halloween" title="dependencies status"><img src="https://david-dm.org/weichiachang/happy-halloween/status.svg"/></a>
-<a target="_blank" href="https://david-dm.org/weichiachang/happy-halloween?type=dev" title="dev-dependencies status"><img src="https://david-dm.org/weichiachang/happy-halloween/dev-status.svg"/></a>
+<a target="_blank" href="https://badge.fury.io/js/happy-halloween" title="score-me"><img src="https://readme-score-api.herokuapp.com/score.svg?url=WeiChiaChang/happy-halloween"/></a>
 
 <a target="_blank" href="https://opensource.org/licenses/MIT" title="License: MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg"></a>
 <a target="_blank" href="https://github.com/WeiChiaChang/happy-halloween" title="contributions welcome"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat"></a>
