@@ -9,7 +9,7 @@
 <a target="_blank" href="https://github.com/WeiChiaChang/happy-halloween" title="contributions welcome"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat"></a>
 <a target="_blank" href="https://github.com/WeiChiaChang/happy-halloween"><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=102" alt="Open Source Love">
   </a>
-<a target="_blank" href="https://github.com/WeiChiaChang/happy-halloween"><img src="https://snyk.io/test/npm/happy-halloween/badge.sv" alt="snyk-report"></a>  
+<a target="_blank" href="https://github.com/WeiChiaChang/happy-halloween"><img src="https://snyk.io/test/npm/happy-halloween/badge.svg" alt="snyk-report"></a>  
 
 > Still trying to figure out about how to solve long first loading time, any advice, pull request or issues will be welcome, thanks !
 
