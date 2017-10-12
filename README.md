@@ -45,7 +45,7 @@ That's all, just say "happy halloween" to your browser ! ![turtle](http://i.imgu
 ## Demo
 [Just have fun !](https://weichiachang.github.io/happy-halloween/dist/)
 
-Or [Codepen](https://codepen.io/WeiChiaChang/full/rGKMya?editors=1010) for another live demo !
+Or [Codepen](https://codepen.io/WeiChiaChang/full/rGKMya?editors=1010) demo for another way !
 
 <p align="center">
   <a target="_blank" href="https://github.com/WeiChiaChang/happy-halloween">
