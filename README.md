@@ -53,7 +53,7 @@ Or [Codepen](https://codepen.io/WeiChiaChang/full/rGKMya?editors=1010) for anoth
   </a>
 </p>
 
-> Image Original Source From [Awesome Egoist](https://github.com/egoist/evangelion-card)!
+> Image Original Source From [Awesome Egoist](https://github.com/egoist/evangelion-card) !
 
 ## Installation
 First if all, install [pingy](https://pin.gy/cli/) as default front-end build tool.
